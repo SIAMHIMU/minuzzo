@@ -1,0 +1,455 @@
+@font-face {
+    font-family: sush;
+    src: url(font/fonnts.com-Suisse_Intl_Regular.ttf);
+}
+@font-face {
+    font-family: sushb ;
+    src: url(font/SuisseIntl-Bold-WebM.ttf);
+}
+@font-face {
+    font-family: susut;
+    src: url(font/SuisseIntl-Thin-WebM.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.page1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    z-index: 1;
+}
+.page1 img{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.overly{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.055);
+    z-index: 10;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: azure;
+    padding: 2vw 3vw;
+}
+nav h3{
+    font-family: susut;
+    font-size: 1vw;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+nav i{
+    font-size: 2vw;
+    color: white;
+}
+.overly>h1{
+    font-size: 21vw;
+    font-family: sush;
+    text-transform: uppercase;
+    color: transparent;
+    text-align: center;
+    -webkit-text-stroke: 2px #fff;
+    margin-top: 10%;
+}
+.overly h1 span{
+    display: inline-block;
+}
+.page2{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    width: 30%;
+    height: 100%;
+    padding: 1vw 1vw;
+}
+.left h2{
+    font-family: susut;
+    font-size: 3.4vw;
+    word-spacing: 2px;
+    line-height: 3vw;
+    font-weight: 100;
+}
+.right{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.righttop{
+    width: 100%;
+    height: 40%;
+    padding-left: 1vw;
+    padding-top: 1vw;
+}
+.righttop h4{
+    font-family: susut;
+    font-size: 1.2vw;
+    width: 40%;
+}
+.rightbottom{
+    width: 100%;
+    height: 60%;
+    background-color: yellowgreen;
+    overflow: hidden;
+}
+.rightbottom img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1.2;
+    overflow: hidden;
+}
+.page3{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    padding: 6vw 0;
+    border: 1px solid #dadada;
+    z-index: 11;
+}
+.p1{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.p1-1{
+    width: 50%;
+    height: 100%;
+    border: 1px solid #dadada;
+}
+.p1-1 img{
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
+.p1-2{
+    width: 50%;
+    height: 100%;
+    border: 1px solid #dadada;
+}
+.p1-2 img{
+    width: 70%;
+    height: 80%;
+    object-fit: cover;
+}
+.p2{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.p2-1{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid #dadada;
+}
+.p2-1 .overi:hover{
+    background-color: rgba(255, 255, 255, 0.356);
+    transition: all ease-in 1s;
+}
+
+.p2-1 img{
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+}
+.p2-2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid #dadada
+
+}
+.p2-2 img{
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+.p3{
+   width: 100%;
+   height: 60vh;
+   border: 1px solid #dadada;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.p3 img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.p3-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.p3-right h2{
+    position: absolute;
+    font-family: susut;
+    font-size: 9vw;
+}
+.page4{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+.page4-left{
+    width: 70%;
+    height: 100%;
+    border-right: 1px solid #111;
+    padding: 2vw 2vw;
+}
+.btn{
+    margin-top: 2vw;
+    padding: 0.8vw 4vw;
+    border: 1px solid #111;
+    background-color: #fff;
+}
+button:hover{
+    background-color: #000000;
+}
+.page4-left h3{
+    font-family: susut;
+    font-size: 3vw;
+    text-align: start;
+    font-weight: 200;
+
+}
+.page4-right{
+    width: 30%;
+    height: 100%;
+}
+.page5{
+    padding: 10vw 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 11;
+}
+.p5{
+    width: 33%;
+    height: 100%;
+    border-right: 1px solid #111;
+}
+.p5 img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+.p5-cont{
+    height: 50%;
+    width: 100%;
+    padding: 3vw 1vw;
+}
+.p5 h4{
+    font-family: susut;
+    font-size: 2.4vw;
+}
+.p5 p{
+    font-family: susut;
+    font-size: 1.3vw;
+    font-weight: 100;
+}
+.page6 h2{
+    font-size: 4vw;
+    font-family: susut;
+    font-weight: 200;
+    padding: 0 3vw;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    width: 25%;
+    height: 50vh;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.page7{
+    width: 100%;
+    height: 50vh;
+    margin-top: 5vw;
+    z-index: 11;
+}
+.page7-top{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+}
+.page7-top h3{
+    font-family: susuh;
+    font-weight: 200;
+    margin-bottom: 5vh;
+}
+.page7-top h3:nth-child(1){
+    font-size: 5vw;
+    font-family: 300;
+    font-family: susut;
+}
+.page7-top h3:nth-child(2){
+    padding: 1vw 3vw;
+    border: 1px solid #111;
+}
+.brandslogo{
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+}
+.brands{
+    display: inline-block;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;  
+    animation-name: logos;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.brands img{
+    width: 20%;
+    height: 30vh;
+}
+@keyframes logos {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.page8{
+    margin-top: 5vw;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+.page8left{
+    width: 40%;
+    height: 100%;
+    padding-left: 2vw;
+    border-right: 1px solid #dadada;
+}
+.page8left h2{
+    font-size: 5vw;
+    font-family: susut;
+    font-weight: 300;
+}
+.page8right{
+    width: 60%;
+    height: 100%;
+    font-family: susut;
+    padding-left: 3vw;
+    line-height: 6vw;
+}
+.page8right h5{
+    font-weight: 200;
+    font-size: 2.6vw;
+    border-bottom: 1px solid #dadada;
+}
+.page9{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    z-index: 10;
+}
+.foot{
+    align-items: center;
+}
+.foot h3{
+    font-size: 1.3vw;
+}
+.foot i{
+    font-size: 20vw;
+}
+.page9-mid{
+    margin-top: 20vh;
+    width: 100%;
+    height: 10vh;
+    background-color: #dadada;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page9-mid{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 2.5vw;
+    padding: 3vw;
+    gap: 2vw;
+    font-family: susut;
+}
+.page9-last h1{
+    font-size: 17vw;
+    font-family: sush;
+    font-weight: 500;
+    text-align: center;
+    color: #dadada52;
+}
